@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+<meta charset="UTF-8"/>
+
+<title>Cultivate Restaurant</title>
+
+<meta name="description" content="Cultivate Restaurant at the University of Washington">
+
+<meta name="author" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/index.css">
+
+
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+ 
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAbetz6IwDbdcMu1SCuTcSPd_XA_-Kt708",
+    authDomain: "reservationapp-5747c.firebaseapp.com",
+    databaseURL: "https://reservationapp-5747c.firebaseio.com",
+    storageBucket: "reservationapp-5747c.appspot.com",
+  };
+  
+  firebase.initializeApp(config);
+  
+  var database = firebase.database();
+</script>
+
+</head>
+<body>
+<!--wrapper start-->
+<div class="wrapper" id="wrapper">
+	
+	<!--header-->
+	<header>
+	<div class="banner row" id="banner">		
+		<div class="parallax text-center" style="background-image: url(img/restaurant2.jpg);">
+			<div class="parallax-pattern-overlay">
+				<div class="container text-center" style="height:600px;padding-top:170px;">
+					<a href="#"><img id="site-title" class=" wow fadeInDown" wow-data-delay="0.0s" wow-data-duration="0.9s" src="img/logo.png" alt="logo"/></a>
+					<h2 class="intro wow zoomIn" wow-data-delay="0.4s" wow-data-duration="0.9s">Cultivate Restaurant</h2>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="menu">
+		<div class="navbar-wrapper">
+			<div class="container">
+				<div class="navwrapper">
+					<div class="navbar navbar-inverse navbar-static-top">
+						<div class="container">
+							<div class="navArea">
+								<div class="navbar-collapse collapse">
+									<ul class="nav navbar-nav">
+										<li class="menuItem active"><a href="#wrapper">Home</a></li>
+										<li class="menuItem"><a href="#aboutus">About Us</a></li>
+										<li class="menuItem"><a href="#specialties">Specialties</a></li>
+										<li class="menuItem"><a href="#feedback">Feedback</a></li>
+										<li class="menuItem"><a href="#reserve">Reserve</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	</header>
+		
+	<!--about us-->
+	<section class="aboutus" id="aboutus">
+	<div class="container">
+		<div class="heading text-center">
+			<h2>About Cultivate</h2>
+			<h3>Located on the street level of Elm Hall, Cultivate is a special destination for students, faculty, staff and guests who want to experience full-service dining with a nod to locally sourced fresh food and a community feel. The menu celebrates new discoveries and memories of food, and features a Pacific Northwest twist on regional comforts. Try our savory signature house-smoked pastrami or shrimp po'boy sandwich. Vegetarians can revel in the fresh, crisp tastes of our seasonal market salad, veggie quesadillas or the mac bar.</h3>
+		</div>			
+		<div class="row">
+			<div class="col-md-6">
+				<div class="papers text-center">
+					<img src="img/chef.jpg" alt=""><br/>
+					<h4 class="notopmarg nobotmarg">John Vandeley</h4>
+					<p>
+						John is our dedicated Head Chef. He has more than 8 years of culinary experience, having led numerous restaurants across the globe. In his most recent gig, John managed the kitchen for Hyatt Park Bangkok, a five-star luxury restaurant well known for its fine Eurasian dishes. Now living in Seattle, John sees this as an exciting opportunity to truly work with locally sourced fresh food - his lifelong passion. With his knowledge of international cuisines, he's excited to bring to Cultivate dishes you will love to eat and tell others about.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="papers text-center">
+					<img src="img/manager.jpg" alt=""><br/>
+					<h4 class="notopmarg nobotmarg">Kenny Lee</h4>
+					<p>
+						As the Lead Manager, Kenny brings to Cultivate 16 years of culinary management experience. Besides being a food lover, Kenny's management philosophy starts with the client. The client is always right, and the existence of Cultivate relies on the full satisfaction of its clients. As a manager, Kenny also tries to build a strong bond with his staff. Now in his fifth year at Cultivate, the restaurant has become a second home to Kenny. He welcomes you to come and try out our diverse menu, with new and exciting dishes being introduced everyday.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<!--specialties-->
+	<section class="specialties" id="specialties">
+	<div class="container">
+		<div class="heading text-center">
+			<h2>Our Specialties</h2>
+			<h3>Our menu changes with the seasons, and you'll find exciting new dishes to try that are featured on the daily fresh sheet everyday. Our ingredients are all locally influenced, seasonally motivated, and sustainably minded. Check out some of the specialty dishes that have helped made Cultivate a popular choice for students, faculty, and staff at the University of Washington - as well as elsewhere!</h3>
+		</div>
+		<div class="row" id="specialty">
+			<div class="col-md-4">
+				<div class="restmenuwrap">
+					<h3 class="maincat notopmarg text-center">STARTER</h3>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(img/tuna.jpg)">
+						</div>
+						<h5>Ahi Bites</h5>
+						<p>
+							A fresh sheet special—cucumber, grilled rare ahi tuna, citrus wasabi aioli and candied citrus zest. A beautiful combination of the Pacific Northwest taste and the tropical fruits, giving you and long-lasting impression which you'll never forget.
+						</p>
+					</div>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(img/onion.JPG)">
+						</div>
+						<h5>Onion Rings</h5>
+						<p>
+							Our thick-cut onion rings are made from whole white onions, battered with a subtle blend of spices, letting the onion’s natural sweetness shine through. Fried golden after you order and salted the second they leave the fryer - a perfect way to start.
+						</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-md-4">
+				<div class="restmenuwrap">
+					<h3 class="maincat notopmarg text-center">MAIN</h3>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(img/burger.jpg)">
+						</div>
+						<h5>The Burger</h5>
+						<p>
+							One of the "Best Burgers Around Puget Sound" according to KING 5 viewers. A 6 oz hand-hewn patty, house slather, Peppashire pub cheese, pickles, lettuce, tomato and red onion on a butter-toasted pretzel roll. One word — incredible.
+						</p>
+					</div>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(img/steak.jpg)">
+						</div>
+						<h5>Steak Sandwich</h5>
+						<p>
+							Tender, flavorful and perfectly seasoned prime rib, sliced thin, topped with smoked gouda cheese and creamy horseradish sauce and served on a ciabatta bun. Served with a side of au jus - never a better dish to enjoy your summer days.
+						</p>
+					</div>
+				</div>
+			</div>
+					
+			<div class="col-md-4">
+				<div class="restmenuwrap">
+					<h3 class="maincat notopmarg text-center">DESSERT</h3>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(img/coffee.jpg)">
+						</div>
+						<h5>Coffee Cheesecake</h5>
+						<p>
+							The scrumptious cheesecake, baked in a chocolate cookie crust, flavored with coffee and drizzled with melted chocolate and a coffee-caramel sauce. The true Seattleite dessert, incorporating our city's icon into your sweet desires.
+						</p>
+					</div>
+					<div class="restitem clearfix">
+						<div class="rm-thumb" style="background-image: url(img/mousse.jpg)">
+						</div>
+						<h5>Vanilla Mousse</h5>
+						<p>
+							This light, creamy vanilla dessert is heaven in a teaspoon. The ultimate compliment to your heavy main course, with a strawberry layer on top to give you that fresh taste along with the delightful sweetness. Unsurprisingly, one of our top orders.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	<!--feedback-->
+	<section class="feedback" id="feedback">
+	<div class="container w960" id="clients">
+		<div class="heading">
+			<h2>Clients Say</h2>
+			<h3>We've had the pleasure to serve numerous clients throughout our operational years, and many had been kind enough to leave us their good words. A client's word of compliment not only motivates us to work harder, but also validates the quality we deliver in our dishes. See what some of them have said over the past few years.</h3>
+		</div>
+		<div class="row">
+		<blockquote>Broke college students rejoice! You can now dine in style. I love this place as a UW student. Being forced to get a mandatory dining plan, it was either eat here or at the substandard dining halls. Although it's a full-service restaurant, the prices are almost the same as the dining halls, but the food is so much better. In addition, the kitchen was usually on point and pretty quick. I have more than often bring my friends and family here for meals. <cite>John Blaton, UW Student<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite> </blockquote>
+		<blockquote>Love the atmosphere here! This restaurant is part of the UW Housing and Food system, but it is open to anyone. Good place for students and faculty to have a decent meal that is not expensive and has fresh vegetables and greens. I really liked the burger! Will stop by for another lunch again. Part of the money you pay here goes to a fundraising account for students, which I think is a great initiative. <cite>Anna Patel, UW Faculty<br/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></cite> </blockquote>
+		</div>
+	</div>
+	</section>
+	
+	<!--reserve-->
+	<section class="reserve" id="reserve">
+	<div class="container">
+		<div class="heading">
+				<h2>Interested?</h2>
+				<h3>Ready to give Cultivate a shot? Whether you're a first time client, or a frequent visitor to our restaurant, we promise that your experience with Cultivate will not only end with the delicious food we serve, but a delightful impression that will last beyond your visit here. You can call us at (206) 685-3622, or fill in this form to access our online reservation system. </h3>
+		</div>
+	</div> 
+	 <div class="container">
+		<div class="main">
+			<!--<form action="#" method="post" onsubmit="return formValidation()">-->
+				<form id="booking-form">
+				<label>First Name :</label>
+				<input id="firstname" name="firstname" placeholder="John" type="text"><br>
+				<label>Last Name :</label>
+				<input id="lastname" name="lastname" placeholder="Doe" type="text"><br>
+				<label>Phone Number :</label>
+				<input id="tel" name="tel" placeholder="(###) ###-####" type="text"><br>
+				<label>Number of Guests :</label>
+				<input id="partysize" name="partysize" type="number"  min="1" max="14"><br>
+				<label>Date : </label>
+				<input type="date" id="date" name="date" min="2016-06-05"><br>
+				<label>Time : </label>
+				<input type="time" name="time" id ="time"><br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+  
+	<!--footer-->
+	<section class="footer" id="footer">
+	<p class="text-center">
+		<a href="#wrapper" class="gototop"><i class="fa fa-angle-double-up fa-2x"></i></a>
+	</p>
+	<div class="container" id="address">
+		<p>1218 NE Campus Parkway</p>
+		<p>Seattle, WA 98105</p>
+		<p>(206) 685-3622</p>
+	</div>
+	<div class="container" id="social">
+		<ul>
+			<li><a href="https://www.facebook.com/CultivateUW/"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="https://www.instagram.com/cultivateuw/"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		<p>
+			&copy; Copyright Cultivate 2016<br>
+			 
+		</p>
+	</div>
+	</section>
+	
+</div><!--wrapper end-->
+
+<!--Javascripts-->
+<script type="text/javascript" src="js/app.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/menustick.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/masonry.js"></script>
+<script src="js/imgloaded.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/colorfinder.js"></script>
+<!--<script src="js/gridscroll.js"></script>-->
+<script src="js/contact.js"></script>
+<script src="js/common.js"></script>
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+jQuery(function($) {
+$(document).ready( function() {
+  //enabling stickUp on the '.navbar-wrapper' class
+	$('.navbar-wrapper').stickUp({
+		parts: {
+		  0: 'banner',
+		  1: 'aboutus',
+		  2: 'specialties',
+		  3: 'gallery',
+		  4: 'feedback',
+		  5: 'reserve'
+		},
+		itemClass: 'menuItem',
+		itemHover: 'active',
+		topMargin: 'auto'
+		});
+	});
+});
+</script>
+</body>
+</html>
